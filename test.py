@@ -1,7 +1,8 @@
 import torch
 from audioldm_eval import EvaluationHelper
 
-device = torch.device(f"cuda:{0}")
+# device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cpu'
 
 generation_result_path = "example/paired"
 # generation_result_path = "example/unpaired"
